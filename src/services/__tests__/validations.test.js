@@ -49,4 +49,4 @@ describe("check whether the gamerTag is valide or not - checkGamerTag", () => {
     });
 });
 
-// TODO: Create tests suite for validation function
+
