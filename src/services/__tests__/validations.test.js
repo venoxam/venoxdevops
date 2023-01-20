@@ -48,5 +48,3 @@ describe("check whether the gamerTag is valide or not - checkGamerTag", () => {
         expect(result).toBe(true);
     });
 });
-
-
