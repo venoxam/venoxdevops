@@ -4,7 +4,7 @@
   "description": "devops 07 cd final",
   "main": "index.js",
   "scripts": {
-	"start": "webpack serve ./public/main.js --mode=development",
+    "start": "webpack serve ./public/main.js --mode=development",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll",
@@ -61,5 +61,8 @@
         "statements": 90
       }
     }
+  },
+  "dependencies": {
+    "firebase-tools": "^11.21.0"
   }
 }
