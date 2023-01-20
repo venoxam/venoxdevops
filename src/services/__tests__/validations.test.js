@@ -28,6 +28,16 @@ describe("check whether the gamerTag is valide or not - checkGamerTag", () => {
         expect(result).toBe(true);
     });
 
+    test("should return false as gamerTag doesnt contain special char", () => {
+        const result = checkGamerTag('ggdfgfdsfsfsdf');
+        expect(result).toBe(false);
+    });
+
+    test("should return true as gamerTag does contain special char", () => {
+        const result = checkGamerTag('ggdfgfdsfsfsdf!');
+        expect(result).toBe(true);
+    });
+
 });
 
 // TODO: Create tests suite for validation function
