@@ -13,9 +13,10 @@ try {
     });
 
     checkButton.addEventListener("click", () => {
-        feedbackMessageText = isEmpty(gamerTagValue) && checkGamerTag(gamerTagValue)
-            ? "Gamer tag doesnt match"
-            : "Gamer tag is valid";
+        feedbackMessageText =
+            isEmpty(gamerTagValue) && checkGamerTag(gamerTagValue)
+                ? "Gamer tag doesnt match"
+                : "Gamer tag is valid";
         feedbackMessage.textContent = feedbackMessageText;
     });
 } catch (err) {

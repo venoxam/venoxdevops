@@ -19,35 +19,34 @@ describe("validations tests suites - isEmpty", () => {
 
 describe("check whether the gamerTag is valide or not - checkGamerTag", () => {
     test("should return false as length < 8", () => {
-        const result = checkGamerTag('ggdfg');
+        const result = checkGamerTag("ggdfg");
         expect(result).toBe(false);
     });
 
     test("should return true as length >= 8", () => {
-        const result = checkGamerTag('ggdfgfdsfsfsdf!9');
+        const result = checkGamerTag("ggdfgfdsfsfsdf!9");
         expect(result).toBe(true);
     });
 
     test("should return false as gamerTag doesnt contain special char", () => {
-        const result = checkGamerTag('ggdfgfdsfsfsdf');
+        const result = checkGamerTag("ggdfgfdsfsfsdf");
         expect(result).toBe(false);
     });
 
     test("should return true as gamerTag does contain special char", () => {
-        const result = checkGamerTag('ggdfgfdsfsfsdf!9');
+        const result = checkGamerTag("ggdfgfdsfsfsdf!9");
         expect(result).toBe(true);
     });
 
     test("should return false as gamerTag doesnt contain a number", () => {
-        const result = checkGamerTag('ggdfgfdsfsfsdf!');
+        const result = checkGamerTag("ggdfgfdsfsfsdf!");
         expect(result).toBe(false);
     });
 
     test("should return true as gamerTag does contain aa number", () => {
-        const result = checkGamerTag('ggdfgfdsfsfsdf!9');
+        const result = checkGamerTag("ggdfgfdsfsfsdf!9");
         expect(result).toBe(true);
     });
-
 });
 
 // TODO: Create tests suite for validation function
