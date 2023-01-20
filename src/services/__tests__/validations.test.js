@@ -17,4 +17,11 @@ describe("validations tests suites - isEmpty", () => {
     });
 });
 
+describe("check whether the gamerTag is valide or not - checkGamerTag", () => {
+    test("should return a boolean", () => {
+        const result = isEmpty();
+        expect(result).toMatch('^(True|False|TRUE|FALSE)$');
+    });
+});
+
 // TODO: Create tests suite for validation function
