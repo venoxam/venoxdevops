@@ -24,7 +24,7 @@ describe("check whether the gamerTag is valide or not - checkGamerTag", () => {
     });
 
     test("should return true as length >= 8", () => {
-        const result = checkGamerTag('ggdfgfdsfsfsdf');
+        const result = checkGamerTag('ggdfgfdsfsfsdf!');
         expect(result).toBe(true);
     });
 
@@ -37,6 +37,8 @@ describe("check whether the gamerTag is valide or not - checkGamerTag", () => {
         const result = checkGamerTag('ggdfgfdsfsfsdf!');
         expect(result).toBe(true);
     });
+
+    
 
 });
 
